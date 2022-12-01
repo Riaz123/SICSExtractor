@@ -4,8 +4,8 @@
         "data_sets": [
             {
                 "connection": {
-                    "server": "SICS-SQL-R-PROD",
-                    "database": "SICSNT_RPT"
+                    "server": "**DB_SERVER_NAME",
+                    "database": "**DATABASE_NAME"
                 },
                 "script_dir": "sql/sics",
                 "info_script_dir": "The relative path to the folder holding the scripts to execute",
