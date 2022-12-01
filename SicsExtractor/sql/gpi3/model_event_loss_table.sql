@@ -10,7 +10,7 @@ SELECT melt_row.EltId melt_id,
        melt_row.SeverityParameter4,
        melt_row.SeverityParameter5,
        melt_row.FrequencyGroupId
-FROM [GPISystem_Simulation].[dbo].[Elt] melt
+FROM [DATABAS_NAME].[dbo].[Elt] melt
     JOIN dbo.EltRow melt_row
         ON melt_row.EltId = melt.Id
 WHERE melt.Type = 'Market'
