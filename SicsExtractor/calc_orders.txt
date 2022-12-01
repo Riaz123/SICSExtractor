@@ -1,0 +1,16 @@
+(venv) E:\repos\analytics\DeliveryDbData [UWI-2242-dataapp ≡ +0 ~3 -0 !]> ls -Path gpi_json:\Rlt\* | sort -Property LastWriteTime -Descending | select -First 5
+
+
+    Directory: \\sirius.local\app\GPIDoc\DevI\ITest\File Repository\Rlt
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       2021-05-27     14:44         258286 7dce1333-69f3-4712-acb8-7927fe8ce20f_105d7e63-a45b-4f3d-91d9-b6cdfc2be3e6_best_20210101.as.p
+                                                 bx
+-a----       2021-05-27     14:44         273911 7dce1333-69f3-4712-acb8-7927fe8ce20f_105d7e63-a45b-4f3d-91d9-b6cdfc2be3e6_best_20210101.pbx
+-a----       2021-05-27     14:44         419372 96cacd8d-dbf6-4483-a582-f88b4a4ea1fc_cea4a15c-23db-46fe-8259-b7c1f9d3de2a_best_20210101.as.p
+                                                 bx
+-a----       2021-05-27     14:44         231272 96cacd8d-dbf6-4483-a582-f88b4a4ea1fc_cea4a15c-23db-46fe-8259-b7c1f9d3de2a_best_20210101.pbx
+-a----       2021-05-27     14:44         620178 2b1a62a3-fa20-4786-abe1-ca8bb108bd21_527362a0-4458-4ed8-8a9a-9f8b3648ad2d_best_20210101.as.p
+                                                 bx

@@ -1,0 +1,44 @@
+{
+    "INFO": "THIS IS JUST AN EXAMPLE, the real file is named config.json",
+    "parquet": {
+        "data_sets": [
+            {
+                "connection": {
+                    "server": "SICS-SQL-R-PROD",
+                    "database": "SICSNT_RPT"
+                },
+                "script_dir": "sql/sics",
+                "info_script_dir": "The relative path to the folder holding the scripts to execute",
+                "out_dir": "t:/parquet/sics",
+                "info_out_dir": "The folder where the parquet is written",
+                "config": {
+                    "class_of_business": {
+                        "overwrite": true,
+                        "info": "We only override the overwrite flag for this sql script. Meaning that existing data is deleted and written again"
+                    },
+                    "contract_object": {
+                        "partition_on": [
+                            "business_id",
+                            "underwriting_year"
+                        ],
+                        "info": "The parquet will be partitioned by business_id and underwriting_year"
+                    },
+                    "business_partner": {
+                        "partition_on": [
+                            "is_active",
+                            "category",
+                            "country"
+                        ],
+                        "overwrite": true
+                    },
+                    "contract_business_partner": {
+                        "partition_on": [
+                            "business_partner_role"
+                        ],
+                        "overwrite": true
+                    }
+                }
+            }
+        ]
+    }
+}
