@@ -37,12 +37,12 @@ SELECT DISTINCT
                0
        END AS is_alert,
        p.FRK_STATUS status
-FROM SICSNTPC.PARTY p
-    JOIN SICSNTPC.ORGANISATION_NAME o
+FROM DB_NAME.PARTY p
+    JOIN DB_NAME.ORGANISATION_NAME o
         ON p.OBJECT_ID = o.FK_ORGANISATION
            -- 3 means current name of the company
            AND o.SUBCLASS = 3
-    JOIN SICSNTPC.LEGAL_AREA c
+    JOIN DB_NAME.LEGAL_AREA c
         ON p.FK_HOME_COUNTRY = c.OBJECT_ID
     JOIN BUS_PARTNER_CAT pcat
         ON p.OBJECT_ID = pcat.FK_PARTNER
