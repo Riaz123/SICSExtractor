@@ -3,8 +3,8 @@
         "data_sets": [
             {
                 "connection": {
-                    "server": "SICS-SQL-R-PROD",
-                    "database": "SICSNT_RPT"
+                    "server": "**DB_Server**",
+                    "database": "**DB_Name**"
                 },
                 "script_dir": "sql/sics",
                 "out_dir": "e:/parquet/sics",
@@ -53,8 +53,8 @@
             },
             {
                 "connection": {
-                    "server": "dev-sql-0290",
-                    "database": "GPISystem_Prod_Copy"
+                    "server": "**DB_SERVER**",
+                    "database": "**DB_NAME**"
                 },
                 "script_dir": "sql/gpi3",
                 "out_dir": "e:/parquet/gpi3",
