@@ -1,3 +1,5 @@
+#from email._header_value_parser import get_section
+
 from . import config
 from . import sicsdb
 from . import data_repo
@@ -17,7 +19,7 @@ def parquet_from_db(cfg: config.ConfigHelper, compression: str = "snappy"):
     sections = cfg.get_section("parquet").get_section_array("data_sets")
 
     for s in sections:
-        conn = s.get_section("connection")
+        conn = config.ConfigSection.get_section("connection")
         db_info = models.DatabaseInfo(
             conn.get_string("server"),
             conn.get_string("database"))
